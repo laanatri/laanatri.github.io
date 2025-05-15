@@ -45,8 +45,8 @@ window.addEventListener("resize", () => {
 /////////////////////////////////////////////////////////////////////
 let tl = gsap.timeline();
 tl.fromTo("header .image-background", { opacity: 0 }, { opacity: 1, duration: .5 });
-tl.fromTo("header h2", { y: 300 }, { y: 0, duration: 1, delay: 0.5 });
-tl.fromTo(".home-hi .button", { y: 150 }, { y: 0, duration: 1 }, "-=1");
+tl.fromTo("header h2", { y: 300, autoAlpha: 0 }, { y: 0, autoAlpha: 1, duration: 1, delay: 0.5 });
+tl.fromTo(".home-hi .button", { y: 150, autoAlpha: 0 }, { y: 0, autoAlpha: 1, duration: 1 }, "-=1");
 tl.fromTo("nav", { y: "-100%" }, { y: "0%", duration: 0.5 });
 tl.fromTo(".side-bar", { x: "200%" }, { x: "0%", duration: 0.5 });
 
@@ -56,7 +56,7 @@ let tl2 = gsap.timeline({
         start: "+=250",
         end: "bottom-=100 top",
         scrub: 1,
-        markers: true,
+        // markers: true,
     },
 });
 tl2.fromTo("header .image-background", { opacity: 1 }, { opacity: .05 });
