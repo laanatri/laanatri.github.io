@@ -36,11 +36,13 @@ body {
   background-color: var(--black);
   cursor: none;
 }
-body:hover .cursor {
-  display: flex !important;
-}
-body:hover .cursor-dot {
-  display: block !important;
+@media (min-width: 768px) {
+  body:hover .cursor {
+    display: flex !important;
+  }
+  body:hover .cursor-dot {
+    display: block !important;
+  }
 }
 
 h1,

@@ -63,12 +63,14 @@ body {
     position: relative;
     background-color: var(--black);
     cursor: none;
-    &:hover {
-        .cursor {
-            display: flex !important;
-        }
-        .cursor-dot {
-            display: block !important;
+    @include tablette() {
+        &:hover {
+            .cursor {
+                display: flex !important;
+            }
+            .cursor-dot {
+                display: block !important;
+            }
         }
     }
 }
