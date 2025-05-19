@@ -34,13 +34,13 @@ pointersHover.forEach(p => {
 })
 
 /////////////////////////////////////////////////////////////////////
-window.addEventListener("load", () => {
-    window.scrollTo(0, 0);
-});
+// window.addEventListener("load", () => {
+//     window.scrollTo(0, 0);
+// });
 
-window.addEventListener("resize", () => {
-    window.scrollTo(0, 0);
-});
+// window.addEventListener("resize", () => {
+//     window.scrollTo(0, 0);
+// });
 
 /////////////////////////////////////////////////////////////////////
 let tl = gsap.timeline();
