@@ -606,6 +606,11 @@ header .header-content .home-hi .button {
 .projets-section .projets-content .projets:hover .img-content {
   filter: sepia(0);
 }
+@media (min-width: 768px) {
+  .projets-section .projets-content .projets:first-child .txt-content > div:nth-child(2) > div:nth-child(2) {
+    width: 200px;
+  }
+}
 
 .about-section {
   position: relative;
